@@ -169,11 +169,22 @@ section {
     Font-Family: Bebas Neue;
     font-size: 24px;
     margin: 0 5px;
-    border-bottom: 3px solid #fff;
 }
 
-#menu-list li:hover {
-    border-bottom: 3px solid #FF5C00;
+#menu-list li div {
+    height: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+#menu-list li div > span {
+    background-color: #FF5C00;
+    transition: width .5s;
+    width: 0px;
+}
+
+
+#menu-list li:hover div > span {
+    width: 50%;
 }
 
 #menu-list a {

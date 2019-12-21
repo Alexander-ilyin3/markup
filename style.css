@@ -11,7 +11,6 @@ body {
     font-family: Montserrat;
     font-size: 14px;
     margin: 0;
-    /* padding: 0 50px; */
     box-sizing: border-box;
 }
 
@@ -53,13 +52,8 @@ button {
     font-size: 14px;
     color: #fff;
     padding: 0;
-
     width: 150px;
     height: 41px;
-
-
-    /* padding: 15px 30px;
-    margin-top: 10px; */
 }
 
 #slider-container {
@@ -136,23 +130,13 @@ button {
 #slider-container .slider .slide2 { background-image: url(img/slider-1.png); }
 #slider-container .slider .slide3 { background-image: url(img/slider-3.png); }
 
-
 #slide1:checked ~ .slider > .slide1,
 #slide2:checked ~ .slider > .slide2,
-#slide3:checked ~ .slider > .slide3
- {
+#slide3:checked ~ .slider > .slide3 {
 	opacity: 1;
     z-index: 1;
     transform: scale(1);   
 }
-
-
-
-
-
-
-
-
 
 section { 
     display: block; 
@@ -183,8 +167,6 @@ section {
 
 #menu-list li {
     Font-Family: Bebas Neue;
-    /* font-style: normal;
-    font-weight: normal; */
     font-size: 24px;
     margin: 0 5px;
     border-bottom: 3px solid #fff;
@@ -197,10 +179,6 @@ section {
 #menu-list a {
     text-decoration: none;
     color: #333;
-}
-
-#menu-list a:hover {
-    /* TODO */
 }
 
 #badges {
@@ -219,19 +197,14 @@ section {
     color: #fff;
     background-color: #C4C4C4;
     border-radius: 50%;
-    /* Font-Family: Bebas Neue; */
     font-style: normal;
     font-weight: normal;
     width: 17px;
     height: 17px;
-    /* padding-top: 2px; */
     text-align: center;
 }
 
 /* ABOUT US */
-#about-us {
-
-}
 
 #about-us .paragraph { 
     margin: 43px 43px 0;
@@ -270,16 +243,13 @@ section {
 #about-us .pic2 {
     background-image: url('img/about-us-2.png');
     z-index: 3;
-    /* position: absolute; */
     width: 353px;
     height: 481px;
     margin: -250px 0 0 100px;
-    /* right: 67px; */
 }
 
 #about-us > div.flex {
     margin-left: 50px;
-    /* padding-top: 20px; */
     position: relative;
 }
 
@@ -344,7 +314,6 @@ section {
     width: 240px;
     height: 446px;
     margin: 0 10px;
-    /* flex-basis: 25%; */
 }
 
 #popular > .flex p {
@@ -361,7 +330,6 @@ section {
 
 #popular img {
     width: inherit;
-    /* height: inherit; */
 } 
 
 #popular > div > div > span {
@@ -507,10 +475,6 @@ section {
     z-index: 2;
 }
 
-/* #showrooms .part-2 > div > div:nth-child(5){
-    display: none;
-} */
-
 #showrooms .part-2 > div > div:nth-child(1):hover div {
     opacity: 1;
     transition: opacity 0.2s;
@@ -574,7 +538,6 @@ section {
 #contact-us .icons {
     flex-direction: column;
     flex-wrap: wrap;
-
 }
 
 #contact-us .icons > div {
@@ -630,8 +593,6 @@ footer .form {
     justify-content: center;
     width: 40%;
 }
-
-/* footer .form > div { align-items: center; } */
 
 footer input {
     display: inline-block;

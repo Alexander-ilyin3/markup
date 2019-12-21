@@ -4,20 +4,20 @@ const modalBody = document.getElementById('modalBody')
 const modalOk = document.getElementById('modalOk')
 const cross = document.getElementById('cross')
 
-subscribeButton.addEventListener('click', showModal)
-
-modalBody.addEventListener('blur', () => {
-        console.log(event)
-        modal.classList.remove('show')
-    })
-    
-function showModal() {
-    console.log(modal)
-
-    modal.classList.add('show')
-
-    modalBody.focus()
-
-    
+function toggleModal() {
+    modal.classList.toggle('show')
 }
 
+subscribeButton.addEventListener('click', () => toggleModal())
+
+modal.addEventListener('click', function(event) {
+
+        switch (event.target) {
+
+            case modal: toggleModal(); break
+            case modalOk: toggleModal(); break
+            case cross: toggleModal(); break
+            
+            default: break
+    }
+})
